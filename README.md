@@ -8,11 +8,6 @@ Rails version : 5.2.0
 
 ## Install
 
-Cloner le repository
-```sh
-https://github.com/jibenight/Doctors-THP-project.git
-```
-
 Installer les gems
 ```sh
 bundle install
