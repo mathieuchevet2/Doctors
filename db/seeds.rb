@@ -8,12 +8,12 @@
 require 'faker'
 
 
-8.times do
+20.times do
   doctor = Doctor.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, postal_code: Faker::Address.zip_code)
 
   patient = Patient.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name)
 
-  appointment = Appointment.create(date: Faker::Time.forward(23, :morning), doctor_id: rand(2..10), patient_id: rand(2..10))
+  appointment = Appointment.create(date: Faker::Time.forward(23, :morning), doctor_id: rand(1..10), patient_id: rand(1..10))
 
   city = City.create(name: Faker::Address.city)
 
